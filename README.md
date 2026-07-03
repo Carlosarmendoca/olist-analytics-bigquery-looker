@@ -24,8 +24,7 @@ de dados, queries SQL otimizadas e visualizações em nível executivo.
 - Google BigQuery
 - SQL (CTEs, Window Functions, Joins)
 - Looker Studio
-- Python
-- Git & GitHub
+- GitHub
 
 ## 🗂️ Modelo de Dados — Views Analíticas
 
@@ -34,7 +33,7 @@ de dados, queries SQL otimizadas e visualizações em nível executivo.
 | `vw_receita_por_estado` | Receita, ticket médio e prazo de entrega por estado |
 | `vw_receita_mensal` | Receita mensal com variação MoM e acumulado anual |
 | `vw_top_categorias` | Desempenho de categorias com receita e preço médio |
-| `vw_pedidos_status` | Distribuição de status dos pedidos ao longo do tempo |
+| `vw_status_pedidos` | Distribuição de status dos pedidos ao longo do tempo |
 | `vw_clientes_regiao` | Distribuição de clientes por cidade e estado |
 
 ## 🏗️ Pipeline de Dados
