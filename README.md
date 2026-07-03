@@ -70,7 +70,7 @@ Looker Studio
 
 ### 📊 Painel Executivo
 
-- Faturamento Total
+- Receita Total
 - Ticket Médio
 - Pedidos Entregues
 - Prazo Médio de Entrega
