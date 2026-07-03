@@ -28,13 +28,13 @@ de dados, queries SQL otimizadas e visualizações em nível executivo.
 
 ## 🗂️ Modelo de Dados — Views Analíticas
 
-| View | Descrição |
-|------|-----------|
-| `vw_receita_por_estado` | Receita, ticket médio e prazo de entrega por estado |
-| `vw_receita_mensal` | Receita mensal com variação MoM e acumulado anual |
-| `vw_top_categorias` | Desempenho de categorias com receita e preço médio |
-| `vw_status_pedidos` | Distribuição de status dos pedidos ao longo do tempo |
-| `vw_clientes_regiao` | Distribuição de clientes por cidade e estado |
+| View | Descrição | SQL |
+|------|-----------|-----|
+| `vw_receita_por_estado` | Receita, ticket médio e prazo de entrega por estado | [Ver SQL](painel/sql/receita_por_estado.sql) |
+| `vw_receita_mensal` | Receita mensal com variação MoM e acumulado anual | [Ver SQL](painel/sql/receita_mensal.sql) |
+| `vw_top_categorias` | Desempenho de categorias com receita e preço médio | [Ver SQL](painel/sql/top_categorias.sql) |
+| `vw_pedidos_status` | Distribuição de status dos pedidos ao longo do tempo | [Ver SQL](painel/sql/status_pedido.sql) |
+| `vw_clientes_regiao` | Distribuição de clientes por cidade e estado | [Ver SQL](painel/sql/clientes_regiao.sql) |
 
 ## 🏗️ Pipeline de Dados
 Dataset Olist (CSV)
@@ -81,10 +81,8 @@ Looker Studio Dashboard (3 Páginas)
 
 ## 📷 Preview do Dashboard
 
-## 📷 Preview do Dashboard
-
 ### Painel Executivo de Vendas
-<img src="painel/imagens/executivo.png" width="800"/>
+<img src="painel/imagens/Executivo.png" width="800"/>
 
 ### Desempenho das Categorias
 <img src="painel/imagens/categorias.png" width="800"/>
