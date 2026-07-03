@@ -54,21 +54,23 @@ Looker Studio Dashboard (3 Páginas)
 ## 📈 Funcionalidades do Dashboard
 
 ### Painel Executivo de Vendas
-- Faturamento total, pedidos entregues, ticket médio e prazo de entrega
-- Distribuição geográfica de receita por estado
-- Evolução da receita ao longo do ano
-- Top 10 categorias por volume de pedidos
+- Cards: Faturamento Total, Pedidos Entregues, Ticket Médio e Prazo de Entrega
+- Distribuição Geográfica de Receita por Estado
+- Evolução da Receita ao Longo do Ano
+- Top 10 Categorias por Volume de Pedidos
 
 ### Desempenho das Categorias
-- Top 10 categorias por receita
-- Evolução mensal do ticket médio
-- Tabela resumo com receita, itens vendidos, preço médio e ticket médio por categoria
+- Cards: Receita total, Ticket Médio, Itens Vendidose Preço médio por Item  
+- Top 10 Categorias por Receita
+- Evolução Mensal do Ticket Médio
+- Tabela Resumo por Categoria
 
-### Análise de Clientes
-- Distribuição de clientes por estado e cidade
-- Evolução mensal da base de clientes
-- Análise de status dos pedidos
-- Top 10 entregas e clientes por estado
+### Análise e Destribuição de Clientes
+- Cards: Total de Clientes, Pedidos entregues, Pedidos Faturados e Pedidos Cancelados
+- Top 10 Entregas e Clientes por Estado
+- Top 10  de Clientes por Cidade
+- Evolução Mensal de Clientes
+- Pedidos por Status (exceto Entregues)
 
 ## 📚 Competências Demonstradas
 - Modelagem de dados analíticos
