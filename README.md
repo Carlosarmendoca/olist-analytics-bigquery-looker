@@ -58,10 +58,10 @@ Looker Studio
 
 | View | Descrição | SQL |
 |------|-----------|-----|
-| `vw_receita_por_estado` | Receita, Ticket Médio e Prazo Médio de Entrega | [Ver SQL](painel/Sql/receita_por_estado.sql) |
-| `vw_receita_mensal` | Receita Mensal, Crescimento MoM e Acumulado Anual | [Ver SQL](painel/Sql/receita_mensal.sql) |
-| `vw_top_categorias` | Receita por Categoria e Preço Médio | [Ver SQL](painel/Sql/top_categorias.sql) |
-| `vw_pedidos_status` | Evolução dos Status dos Pedidos | [Ver SQL](painel/Sql/status_pedido.sql) |
+| `vw_receita_por_estado` | Receita, Ticket Médio e Prazo Médio de Entrega por Estado | [Ver SQL](painel/Sql/receita_por_estado.sql) |
+| `vw_receita_mensal` | Receita Mensal com Crescimento (MoM) e Acumulado Anual| [Ver SQL](painel/Sql/receita_mensal.sql) |
+| `vw_top_categorias` | Desempenho das Categorias com Receita, Itens Vendidos e Preço Médio | [Ver SQL](painel/Sql/top_categorias.sql) |
+| `vw_pedidos_status` | Evolução Mensal dos Status dos Pedidos| [Ver SQL](painel/Sql/status_pedido.sql) |
 | `vw_clientes_regiao` | Distribuição de Clientes por Cidade e Estado | [Ver SQL](painel/Sql/clientes_regiao.sql) |
 
 ---
