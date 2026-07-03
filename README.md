@@ -79,7 +79,7 @@ Looker Studio
 - Top 10 Categorias por Pedidos
   
 
-<img src="painel/imagens/Executivo.png" width="850"/>
+<img src="painel/imagens/image.png" width="850"/>
 
 ---
 
