@@ -70,13 +70,14 @@ Looker Studio
 
 ### 📊 Painel Executivo
 
-- Receita Total
+- Faturamento Total
 - Ticket Médio
 - Pedidos Entregues
 - Prazo Médio de Entrega
-- Receita por Estado
-- Receita Mensal
-- Top 10 Categorias
+- Receita por Estado (mapa)
+- Evolução da Receita ao Longo do Ano
+- Top 10 Categorias por Pedidos
+  
 
 <img src="painel/imagens/Executivo.png" width="850"/>
 
@@ -87,9 +88,10 @@ Looker Studio
 - Receita por Categoria
 - Ticket Médio
 - Itens Vendidos
-- Preço Médio
-- Evolução Mensal
+- Preço Médio por Item
+- Evolução Mensal do Ticket Médio 
 - Ranking das Categorias
+- Tabela Resumo das Categorias
 
 <img src="painel/imagens/categorias.png" width="850"/>
 
@@ -100,8 +102,9 @@ Looker Studio
 - Total de Clientes
 - Pedidos Entregues
 - Pedidos Cancelados
-- Clientes por Estado
-- Clientes por Cidade
+- Pedidos Faturados
+- Top 10 Entregas e Clientes por Estado
+- Top 10  de Clientes por Cidade
 - Evolução Mensal
 - Status dos Pedidos
 
