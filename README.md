@@ -2,11 +2,11 @@
 
 ## 📌 Sobre o Projeto
 
-Projeto de análise de dados **end-to-end** utilizando o dataset público da **Olist**.
+Projeto de análise de dados end-to-end utilizando o dataset público de e-commerce da Olist.
 
-Os dados foram importados para o **Google BigQuery**, transformados através de consultas SQL Avançado (CTEs, Window Functions, Agregações, Joins e Modelagem de Views Analíticas)
+Os dados foram importados para o Google BigQuery e transformados por meio de consultas SQL avançadas, utilizando CTEs, Window Functions, Agregações, Joins e Views Analíticas, antes de serem conectados ao Looker Studio para a construção de dashboards interativos.
 
-O objetivo do projeto é demonstrar um fluxo completo de Business Intelligence, desde a modelagem dos dados até a geração de insights para apoio à tomada de decisão.
+O objetivo do projeto é demonstrar um fluxo completo de Business Intelligence, desde a modelagem e transformação dos dados até a geração de indicadores e insights que apoiam a tomada de decisão.
 
 ---
 
