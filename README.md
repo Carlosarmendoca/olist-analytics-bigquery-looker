@@ -1,91 +1,171 @@
 # 📊 Olist Sales Analytics | BigQuery & Looker Studio
 
-## 📌 Visão Geral
+## 📌 Sobre o Projeto
 
-Projeto de análise de vendas end-to-end desenvolvido com o dataset público de 
-e-commerce da Olist. Os dados foram modelados e transformados no Google BigQuery 
-através de SQL, antes de serem conectados ao Looker Studio para criação de 
-dashboards interativos.
+Projeto de análise de dados **end-to-end** utilizando o dataset público da **Olist**.
 
-O projeto foca em entregar insights acionáveis de negócio através de modelagem 
-de dados, queries SQL otimizadas e visualizações em nível executivo.
+Os dados foram importados para o **Google BigQuery**, transformados através de consultas SQL utilizando **CTEs, Window Functions e Joins**, consolidados em **Views Analíticas** e posteriormente conectados ao **Looker Studio** para construção de dashboards interativos.
 
-## 🔗 Dashboard
-[Acesse o Dashboard no Looker Studio](https://datastudio.google.com/reporting/072729d8-07b0-4b29-b17b-4af1e3a869f7)
+O objetivo do projeto é demonstrar um fluxo completo de Business Intelligence, desde a modelagem dos dados até a geração de insights para apoio à tomada de decisão.
 
-## 🎯 Objetivos
-- Analisar o desempenho de vendas e comportamento de clientes
-- Construir um modelo analítico de dados no BigQuery
-- Criar queries SQL otimizadas utilizando CTEs e Views
-- Desenvolver dashboards interativos no Looker Studio
-- Aplicar boas práticas de visualização de dados para Business Intelligence
+---
 
-## 🛠️ Tecnologias Utilizadas
+## 🚀 Tecnologias
+
 - Google BigQuery
-- SQL (CTEs, Window Functions, Joins)
+- SQL
 - Looker Studio
+- Git
 - GitHub
 
-## 🗂️ Modelo de Dados — Views Analíticas
+---
+
+## 🎯 Objetivos
+
+- Construir um pipeline analítico utilizando BigQuery
+- Desenvolver consultas SQL otimizadas
+- Criar Views Analíticas para consumo dos dashboards
+- Desenvolver dashboards executivos no Looker Studio
+- Gerar indicadores para suporte à tomada de decisão
+
+---
+
+## 🏗️ Arquitetura do Pipeline
+
+```text
+Dataset Olist (CSV)
+        │
+        ▼
+Google BigQuery
+(Tabelas Raw)
+        │
+        ▼
+Transformações SQL
+(CTEs • Window Functions • Joins)
+        │
+        ▼
+Camada Analítica
+(5 Views)
+        │
+        ▼
+Looker Studio
+(Dashboard Executivo • Categorias • Clientes)
+```
+
+---
+
+## 🗂️ Modelo Analítico
 
 | View | Descrição | SQL |
 |------|-----------|-----|
-| `vw_receita_por_estado` | Receita, ticket médio e prazo de entrega por estado | [Ver SQL](painel/Sql/receita_por_estado.sql) |
-| `vw_receita_mensal` | Receita mensal com variação MoM e acumulado anual | [Ver SQL](painel/Sql/receita_mensal.sql) |
-| `vw_top_categorias` | Desempenho de categorias com receita e preço médio | [Ver SQL](painel/Sql/top_categorias.sql) |
-| `vw_pedidos_status` | Distribuição de status dos pedidos ao longo do tempo | [Ver SQL](painel/Sql/status_pedido.sql) |
-| `vw_clientes_regiao` | Distribuição de clientes por cidade e estado | [Ver SQL](painel/Sql/clientes_regiao.sql) |
+| `vw_receita_por_estado` | Receita, Ticket Médio e Prazo Médio de Entrega | [Ver SQL](painel/Sql/receita_por_estado.sql) |
+| `vw_receita_mensal` | Receita Mensal, Crescimento MoM e Acumulado Anual | [Ver SQL](painel/Sql/receita_mensal.sql) |
+| `vw_top_categorias` | Receita por Categoria e Preço Médio | [Ver SQL](painel/Sql/top_categorias.sql) |
+| `vw_pedidos_status` | Evolução dos Status dos Pedidos | [Ver SQL](painel/Sql/status_pedido.sql) |
+| `vw_clientes_regiao` | Distribuição de Clientes por Cidade e Estado | [Ver SQL](painel/Sql/clientes_regiao.sql) |
 
-## 🏗️ Pipeline de Dados
-Dataset Olist (CSV)
-│
-▼
-Google BigQuery — Tabelas Raw
-│
-▼
-Camada SQL (CTEs • Window Functions • Joins)
-│
-▼
-Camada Analítica (5 Views Otimizadas)
-│
-▼
-Looker Studio Dashboard (3 Páginas)
-## 📈 Funcionalidades do Dashboard
+---
 
-### Painel Executivo de Vendas
-- Cards: Faturamento Total, Pedidos Entregues, Ticket Médio e Prazo de Entrega
-- Distribuição Geográfica de Receita por Estado
-- Evolução da Receita ao Longo do Ano
-- Top 10 Categorias por Volume de Pedidos
+## 📈 Dashboards
 
-### Desempenho das Categorias
-- Cards: Receita total, Ticket Médio, Itens Vendidose Preço médio por Item  
-- Top 10 Categorias por Receita
-- Evolução Mensal do Ticket Médio
-- Tabela Resumo por Categoria
+### 📊 Painel Executivo
 
-### Análise e Destribuição de Clientes
-- Cards: Total de Clientes, Pedidos entregues, Pedidos Faturados e Pedidos Cancelados
-- Top 10 Entregas e Clientes por Estado
-- Top 10  de Clientes por Cidade
-- Evolução Mensal de Clientes
-- Pedidos por Status (exceto Entregues)
+- Receita Total
+- Ticket Médio
+- Pedidos Entregues
+- Prazo Médio de Entrega
+- Receita por Estado
+- Receita Mensal
+- Top 10 Categorias
+
+<img src="painel/imagens/Executivo.png" width="850"/>
+
+---
+
+### 📦 Desempenho das Categorias
+
+- Receita por Categoria
+- Ticket Médio
+- Itens Vendidos
+- Preço Médio
+- Evolução Mensal
+- Ranking das Categorias
+
+<img src="painel/imagens/categorias.png" width="850"/>
+
+---
+
+### 👥 Análise de Clientes
+
+- Total de Clientes
+- Pedidos Entregues
+- Pedidos Cancelados
+- Clientes por Estado
+- Clientes por Cidade
+- Evolução Mensal
+- Status dos Pedidos
+
+<img src="painel/imagens/clientes.png" width="850"/>
+
+---
+
+## 💡 Principais Insights
+
+O projeto permite identificar, entre outros pontos:
+
+- Estados com maior participação na receita.
+- Evolução mensal do faturamento.
+- Categorias com maior volume de vendas.
+- Distribuição geográfica dos clientes.
+- Relação entre ticket médio e categorias.
+- Distribuição dos pedidos por status.
+- Indicadores executivos para acompanhamento das vendas.
+
+---
+
+## 📁 Estrutura do Projeto
+
+```text
+📦 olist-analytics-bigquery-looker
+│
+├── painel
+│   ├── Sql
+│   └── imagens
+│
+├── README.md
+└── documentação
+```
+
+---
+
+## 🔗 Dashboard
+
+👉 **Acesse o Dashboard no Looker Studio**
+
+(https://datastudio.google.com/reporting/072729d8-07b0-4b29-b17b-4af1e3a869f7)
+
+---
 
 ## 📚 Competências Demonstradas
-- Modelagem de dados analíticos
-- SQL avançado — CTEs, Window Functions, Joins complexos
-- Boas práticas de arquitetura de dados (camada raw → views analíticas)
-- Business Intelligence e visualização de dados
-- Design de dashboards executivos
-- Google BigQuery e Looker Studio
 
-## 📷 Preview do Dashboard
+- SQL Avançado
+- Google BigQuery
+- Looker Studio
+- Modelagem Analítica
+- Business Intelligence
+- Visualização de Dados
+- Git e GitHub
+- Construção de Dashboards Executivos
 
-### Painel Executivo de Vendas
-<img src="painel/imagens/Executivo.png" width="800"/>
+---
 
-### Desempenho das Categorias
-<img src="painel/imagens/categorias.png" width="800"/>
+## 🚀 Próximas Evoluções
 
-### Análise de Clientes
-<img src="painel/imagens/clientes.png" width="800"/>
+- [x] Modelagem Analítica
+- [x] Views SQL
+- [x] Dashboard Executivo
+- [x] Dashboard Comercial
+- [x] Dashboard de Clientes
+- [ ] Automatização do Pipeline
+- [ ] dbt
+- [ ] Integração com Python
