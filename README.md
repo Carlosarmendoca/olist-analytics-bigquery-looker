@@ -30,11 +30,11 @@ de dados, queries SQL otimizadas e visualizações em nível executivo.
 
 | View | Descrição | SQL |
 |------|-----------|-----|
-| `vw_receita_por_estado` | Receita, ticket médio e prazo de entrega por estado | [Ver SQL](painel/sql/receita_por_estado.sql) |
-| `vw_receita_mensal` | Receita mensal com variação MoM e acumulado anual | [Ver SQL](painel/sql/receita_mensal.sql) |
-| `vw_top_categorias` | Desempenho de categorias com receita e preço médio | [Ver SQL](painel/sql/top_categorias.sql) |
-| `vw_pedidos_status` | Distribuição de status dos pedidos ao longo do tempo | [Ver SQL](painel/sql/status_pedido.sql) |
-| `vw_clientes_regiao` | Distribuição de clientes por cidade e estado | [Ver SQL](painel/sql/clientes_regiao.sql) |
+| `vw_receita_por_estado` | Receita, ticket médio e prazo de entrega por estado | [Ver SQL](painel/Sql/receita_por_estado.sql) |
+| `vw_receita_mensal` | Receita mensal com variação MoM e acumulado anual | [Ver SQL](painel/Sql/receita_mensal.sql) |
+| `vw_top_categorias` | Desempenho de categorias com receita e preço médio | [Ver SQL](painel/Sql/top_categorias.sql) |
+| `vw_pedidos_status` | Distribuição de status dos pedidos ao longo do tempo | [Ver SQL](painel/Sql/status_pedido.sql) |
+| `vw_clientes_regiao` | Distribuição de clientes por cidade e estado | [Ver SQL](painel/Sql/clientes_regiao.sql) |
 
 ## 🏗️ Pipeline de Dados
 Dataset Olist (CSV)
