@@ -82,10 +82,10 @@ Looker Studio Dashboard (3 Páginas)
 ## 📷 Preview do Dashboard
 
 ### Painel Executivo de Vendas
-![Painel Executivo](imagens/pagina1.png)
+![Painel Executivo](imagens/Painel Executivo de vendas.png)
 
 ### Desempenho das Categorias
-![Categorias](imagens/pagina2.png)
+![Categorias](imagens/Desempenho das Categorias.png)
 
 ### Análise de Clientes
-![Clientes](imagens/pagina3.png)
+![Clientes](imagens/Análise e Distribuição de Clientes.png)
