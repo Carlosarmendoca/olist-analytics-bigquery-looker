@@ -4,7 +4,7 @@
 
 Projeto de análise de dados **end-to-end** utilizando o dataset público da **Olist**.
 
-Os dados foram importados para o **Google BigQuery**, transformados através de consultas SQL utilizando **CTEs, Window Functions e Joins**, consolidados em **Views Analíticas** e posteriormente conectados ao **Looker Studio** para construção de dashboards interativos.
+Os dados foram importados para o **Google BigQuery**, transformados através de consultas SQL Avançado (CTEs, Window Functions, Agregações, Joins e Modelagem de Views Analíticas)
 
 O objetivo do projeto é demonstrar um fluxo completo de Business Intelligence, desde a modelagem dos dados até a geração de insights para apoio à tomada de decisão.
 
@@ -58,11 +58,11 @@ Looker Studio
 
 | View | Descrição | SQL |
 |------|-----------|-----|
-| `vw_receita_por_estado` | Receita, Ticket Médio e Prazo Médio de Entrega por Estado | [Ver SQL](painel/Sql/receita_por_estado.sql) |
-| `vw_receita_mensal` | Receita Mensal com Crescimento (MoM) e Acumulado Anual| [Ver SQL](painel/Sql/receita_mensal.sql) |
-| `vw_top_categorias` | Desempenho das Categorias com Receita, Itens Vendidos e Preço Médio | [Ver SQL](painel/Sql/top_categorias.sql) |
-| `vw_pedidos_status` | Evolução Mensal dos Status dos Pedidos| [Ver SQL](painel/Sql/status_pedido.sql) |
-| `vw_clientes_regiao` | Distribuição de Clientes por Cidade e Estado | [Ver SQL](painel/Sql/clientes_regiao.sql) |
+| `vw_receita_por_estado` | Receita Total, Pedidos, Clientes e Prazo Médio de Entrega por Estado| [Ver SQL](painel/Sql/receita_por_estado.sql) |
+| `vw_receita_mensal` | Receita Mensal com Crescimento (MoM), Acumulado Anual e Total de Pedidos| [Ver SQL](painel/Sql/receita_mensal.sql) |
+| `vw_top_categorias` | Desempenho das Categorias com Receita de Produtos, Frete, Total de Itens e Pedidos | [Ver SQL](painel/Sql/top_categorias.sql) |
+| `vw_pedidos_status` | Evolução Mensal dos Pedidos por Status| [Ver SQL](painel/Sql/status_pedido.sql) |
+| `vw_clientes_regiao` | Distribuição de Clientes por Cidade, Estado e Status dos Pedidos | [Ver SQL](painel/Sql/clientes_regiao.sql) |
 
 ---
 
