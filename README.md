@@ -145,7 +145,7 @@ O projeto permite identificar, entre outros pontos:
 
 👉 **Acesse o Dashboard no Looker Studio**
 
-(https://datastudio.google.com/reporting/072729d8-07b0-4b29-b17b-4af1e3a869f7)
+https://datastudio.google.com/reporting/072729d8-07b0-4b29-b17b-4af1e3a869f7
 
 ---
 
