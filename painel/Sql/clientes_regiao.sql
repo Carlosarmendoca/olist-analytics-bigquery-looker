@@ -4,7 +4,7 @@ SELECT
     o.order_status,
     c.customer_city,
     c.customer_state,
-    o.customer_id,
+    o.customer_unique_id,
     DATE_TRUNC(DATE(o.order_purchase_timestamp), MONTH) AS data_mes,
     EXTRACT(YEAR FROM o.order_purchase_timestamp) AS ano
 
