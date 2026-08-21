@@ -27,7 +27,7 @@ SELECT
         WHEN 'unavailable' THEN 'Indisponível'
         ELSE 'Outros'
     END AS status_pt,
-  COUNT(DISTINCT customer_id)AS total_clientes,
+  COUNT(DISTINCT customer_unique_id)AS total_clientes,
   customer_city,
   customer_state,
   data_mes,
